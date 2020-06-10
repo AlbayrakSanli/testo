@@ -1,0 +1,2 @@
+class Furkan < ApplicationRecord
+end

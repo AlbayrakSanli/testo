@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Furkans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @furkans.each do |furkan| %>
+      <tr>
+        <td><%= link_to 'Show', furkan %></td>
+        <td><%= link_to 'Edit', edit_furkan_path(furkan) %></td>
+        <td><%= link_to 'Destroy', furkan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Furkan', new_furkan_path %>
